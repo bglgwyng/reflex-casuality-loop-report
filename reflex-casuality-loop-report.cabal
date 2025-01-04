@@ -4,14 +4,14 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 
-name:           nAmE
+name:           reflex-casuality-loop-report
 version:        0.0.0
 build-type:     Simple
 
 executable app
   main-is: Main.hs
   other-modules:
-      Paths_nAmE
+      Paths_reflex_casuality_loop_report
   hs-source-dirs:
       app
   default-extensions:
