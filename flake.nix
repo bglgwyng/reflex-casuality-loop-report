@@ -20,10 +20,17 @@
         overlays = [
           haskellNix.overlay
           (final: prev: {
-            ${name} = final.haskell-nix.cabalProject'
+            ${name} = final.haskell-nix.project'
               {
+
+                modules = [
+                  {
+                    enableProfiling = true;
+                    enableLibraryProfiling = true;
+                  }
+                ];
                 src = ./.;
-                supportHpack = true;
+                supportHpack = false;
                 compiler-nix-name = "ghc982";
                 shell.tools = {
                   cabal = "latest";

@@ -22,7 +22,7 @@ cabal.project.local
 cabal.project.local~
 .HTF/
 .ghc.environment.*
-/*.cabal
+# /*.cabal
 # direnv
 .direnv
 # nix
